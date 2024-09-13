@@ -11,7 +11,7 @@ public class Q1WeirdFunction {
             return 4;
         }
         else{
-            return n + fRecursive(n-1) + fRecursive(n-2);
+            return n + fRecursive(n-1) + fRecursive(n-2) + 1;
         }
     }
 
@@ -30,7 +30,7 @@ public class Q1WeirdFunction {
             f[2] = 2;
             f[3] = 4;
             for (int i=4;i<=n;i++){
-                f[i] = n + f[i-1] + f[i-2];
+                f[i] = n + f[i-1] + f[i-2] + 1;
             }
             return f[n];
         }
